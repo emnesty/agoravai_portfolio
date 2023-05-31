@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  outline: 0;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+main {
+  position: relative !important;
+  min-height: 100vh;
+}
+svg,
+img {
+  max-width: 100%;
+}
+button,
+a {
+  background-color: transparent;
+  border: none;
+  cursor: pointer !important;
+}
