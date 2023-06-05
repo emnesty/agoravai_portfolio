@@ -1,5 +1,8 @@
 footer {
-  background: linear-gradient(91.8deg, #000811 3.98%, #000e17 86.98%);
+  // background: linear-gradient(91.8deg, #000811 3.98%, #000e17 86.98%);
+  border-top: 0.5px solid var(--gray-100);
+  background: url(/assets/bg/background-pattern-footer.png) no-repeat center;
+  background-color: var(--white);
   padding-top: 80px;
   width: 100%;
   .container {
@@ -12,7 +15,7 @@ footer {
         font-weight: 600;
         font-size: 32px;
         line-height: 130%;
-        color: #f7f7f7;
+        color: var(--gray-900);
       }
       ul {
         margin-top: 67px;
@@ -32,7 +35,7 @@ footer {
               font-weight: 400;
               font-size: 17px;
               line-height: 120%;
-              color: #f7f7f7;
+              color: var(--gray-900);
               transition: all 0.3s;
             }
             &::after {
@@ -50,7 +53,6 @@ footer {
             }
             &:hover {
               color: var(--primary);
-              cursor: url(../assets/icons/cursor-link-white.svg), auto;
               &::after {
                 opacity: 0.8;
                 bottom: -48%;
@@ -61,7 +63,8 @@ footer {
       }
     }
     .bottom-footer {
-      border-top: 2px solid #2d3235;
+      // border-top: 2px solid #2d3235;
+      // border-top: 0.5px solid var(--gray-100);
       padding-top: 50px;
       padding-bottom: 50px;
       display: flex;
@@ -77,7 +80,7 @@ footer {
           font-size: 15px;
           line-height: 120%;
           text-align: center;
-          color: #f7f7f7;
+          color: var(--gray-900);
         }
         button {
           border: 1.5px solid var(--gray-100);
@@ -91,7 +94,7 @@ footer {
           transition: all 0.3s ease;
           &:hover {
             opacity: 1;
-            background-color: var(--gray-100);
+            color: var(--gray-900);
           }
           img {
             max-width: 1.3rem;
