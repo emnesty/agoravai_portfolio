@@ -59,7 +59,7 @@ header {
             }
           }
           &.active {
-            color: var(var(--primary));
+            color: var(--primary);
             &::after {
               opacity: 0.9;
               bottom: -50%;
