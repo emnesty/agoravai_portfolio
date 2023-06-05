@@ -504,6 +504,9 @@
         z-index: 1;
         width: 100%;
         height: 100%;
+        #swiper-slide-important {
+          max-width: 755px !important;
+        }
         .swiper-slide {
           opacity: 0;
           transition: all 0.3s;
@@ -690,7 +693,7 @@
           .swiper-pagination-bullet {
             width: 24px;
             height: 4px;
-            border-radius: 0px;
+            border-radius: 8px;
             background: #dadcdd;
             transition: all 0.3s;
             opacity: 1;

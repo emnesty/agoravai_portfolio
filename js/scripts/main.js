@@ -77,7 +77,7 @@ const swiper = new Swiper(".slide-principal", {
 // Script for Slide Image Cases
 const slide_image_cases = new Swiper(".slide-image-cases", {
   slidesPerView: "auto",
-  spaceBetween: 32,
+  spaceBetween: 8,
   loop: !0,
   speed: 800,
   centeredSlides: !0,
