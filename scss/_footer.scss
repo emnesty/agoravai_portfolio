@@ -65,8 +65,9 @@ footer {
     .bottom-footer {
       // border-top: 2px solid #2d3235;
       // border-top: 0.5px solid var(--gray-100);
-      padding-top: 50px;
-      padding-bottom: 50px;
+      padding: 24px;
+      margin-bottom: 16px;
+      // background-color: var(--gray-100);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -83,7 +84,7 @@ footer {
           color: var(--gray-900);
         }
         button {
-          border: 1.5px solid var(--gray-100);
+          border: 1.5px solid var(--gray-900);
           display: flex;
           align-items: center;
           justify-content: center;
@@ -98,6 +99,7 @@ footer {
           }
           img {
             max-width: 1.3rem;
+            color: var(--gray-900);
           }
         }
       }

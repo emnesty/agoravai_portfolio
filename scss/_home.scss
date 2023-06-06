@@ -21,13 +21,31 @@
             a {
               display: flex;
               align-items: center;
-              justify-content: center;
-              gap: 0.8rem;
-              font-family: "Inter", sans-serif;
-              font-weight: 600;
-              font-size: 1.7rem;
-              line-height: 120%;
+              gap: 10px;
+              transition: all 0.3s;
+              position: relative;
+              padding-bottom: 5px;
               color: var(--gray-900);
+              &::after {
+                content: "";
+                position: absolute;
+                background-color: var(--primary);
+                bottom: -30%;
+                left: 50%;
+                opacity: 0;
+                transition: 0.4s ease;
+                transform: translate(-50%, -50%);
+                width: 16px;
+                height: 4px;
+                border-radius: 8px;
+              }
+              &:hover {
+                color: var(--gray-900);
+                &::after {
+                  opacity: 0.8;
+                  bottom: -48%;
+                }
+              }
             }
           }
         }

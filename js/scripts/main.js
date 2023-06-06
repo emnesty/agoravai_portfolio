@@ -15,7 +15,7 @@ if (btnScrollTop) {
       imgBtnScrollTop.setAttribute("src", "/assets/icons/icon-arrow-up-footer-black.svg")
     }),
     btnScrollTop.addEventListener("mouseleave", () => {
-      imgBtnScrollTop.setAttribute("src", "/assets/icons/icon-arrow-up-footer.svg")
+      imgBtnScrollTop.setAttribute("src", "/assets/icons/icon-arrow-up-footer-black.svg")
     })
 }
 // Add class active to menu button
