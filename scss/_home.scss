@@ -255,6 +255,35 @@
     }
   }
 
+  @media (max-width: 1270px) {
+    .container {
+      .badge-container {
+        gap: 1.4rem;
+      }
+    }
+  }
+
+  @media (max-width: 860px) {
+    .container {
+      .badge-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3.4rem;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    .container {
+      .badge-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.4rem;
+      }
+    }
+  }
   @media (max-width: 375px) {
     .container {
       .badge-container {

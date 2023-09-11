@@ -118,6 +118,18 @@ header {
   }
 }
 
+@media (max-width: 470px) {
+  header {
+    .container {
+      nav {
+        .language {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 810px) {
   header {
     .menu-mobile {
