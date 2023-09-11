@@ -101,4 +101,60 @@ header {
       }
     }
   }
+  .menu-mobile {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+.menu-opened {
+  @media (max-width: 810px) {
+    .menu-mobile {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 810px) {
+  header {
+    .menu-mobile {
+      display: block;
+      position: fixed;
+      background-color: #040506;
+      width: 100%;
+      height: calc(100% - 88px);
+      left: 0;
+      bottom: 0;
+      padding: 40px 15px;
+      transform: translateY(100%);
+      opacity: 0;
+      transition: 0.5s;
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        li {
+          a {
+            color: #fff;
+            font-size: 28px;
+          }
+        }
+      }
+    }
+    .container {
+      nav {
+        justify-content: flex-end;
+        ul {
+          display: none;
+        }
+      }
+    }
+    .hamburger {
+      display: block;
+    }
+  }
 }

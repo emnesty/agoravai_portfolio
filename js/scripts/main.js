@@ -43,14 +43,6 @@ if (btnScrollTop) {
       imgBtnScrollTop.setAttribute("src", "/assets/icons/icon-arrow-up-footer-black.svg")
     })
 }
-// Add class active to menu button
-const menuButton = document.getElementById("js-menu-button")
-if (menuButton) {
-  menuButton.addEventListener("click", () => {
-    menuButton.classList.toggle("is-active") // add the CSS configuration on this button
-    document.documentElement.classList.toggle("menu-opened")
-  })
-}
 
 // Menu Header Change >20 scroll
 const header = document.getElementById("js-header")
@@ -135,3 +127,12 @@ const slide_about_case = new Swiper(".slide-about-case", {
     swiper: slide_image_cases,
   },
 })
+
+// Add class active to menu mobile button
+const menuButton = document.getElementById("js-menu-button")
+if (menuButton) {
+  menuButton.addEventListener("click", () => {
+    document.documentElement.classList.toggle("menu-opened")
+    menuButton.classList.toggle("is-active") // add the CSS configuration on this button
+  })
+}
