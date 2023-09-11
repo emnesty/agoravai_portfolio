@@ -186,6 +186,39 @@
       }
     }
   }
+
+  @media (max-width: 375px) {
+    .container {
+      .right-content {
+        display: none;
+      }
+      .left-content {
+        padding-top: 5rem;
+      }
+    }
+  }
+  @media (max-width: 414px) {
+    .container {
+      .right-content {
+        display: none;
+      }
+      .left-content {
+        padding-top: 5rem;
+        .content-text {
+          p {
+            font-size: 1.7rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 800px) {
+    .container {
+      .right-content {
+        display: none;
+      }
+    }
+  }
 }
 
 .s-badge {
@@ -196,7 +229,8 @@
   overflow: hidden;
   background-color: var(--gray-100);
   .badge-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
     align-items: center;
     justify-content: center;
     gap: 6.4rem;
@@ -217,6 +251,18 @@
         letter-spacing: 0.03em;
         color: var(--gray-900);
         padding-left: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    .container {
+      .badge-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3.4rem;
       }
     }
   }

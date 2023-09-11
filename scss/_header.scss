@@ -11,8 +11,9 @@ header {
   z-index: 2077;
   .container {
     .logo {
-      h6 {
-        color: var(--gray-900);
+      img {
+        width: 100%;
+        max-width: 200px;
       }
     }
     display: flex;
