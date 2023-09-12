@@ -272,7 +272,6 @@
       }
     }
   }
-
   @media (max-width: 500px) {
     .container {
       .badge-container {
@@ -371,6 +370,54 @@
       }
     }
   }
+  @media (max-width: 600px) {
+    padding-top: 3.2rem;
+    padding-bottom: 6.2rem;
+    .container {
+      padding-bottom: 5.2rem;
+      .skill-titles {
+        display: flex;
+        flex-direction: column;
+        p {
+          margin-top: 16px;
+          text-align: center;
+        }
+      }
+      .row {
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1.6rem;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  @media (max-width: 750px) {
+    .container {
+      .row {
+        ul {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1.6rem;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+  @media (max-width: 530px) {
+    .container {
+      padding-bottom: 5.2rem;
+      .row {
+        ul {
+          display: flex;
+          flex-direction: column;
+          grid-gap: 1.6rem;
+          overflow: hidden;
+        }
+      }
+    }
+  }
 }
 
 .s-about {
@@ -455,6 +502,40 @@
           font-size: 1.4rem;
           line-height: 120%;
           color: #030e15;
+        }
+      }
+    }
+  }
+  @media (max-width: 870px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .text-about {
+        padding-top: 3.2rem;
+        align-items: center;
+        text-align: center;
+        .text-about-desc {
+          padding-top: 1.5rem;
+        }
+      }
+      .text-about-exp-list {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+  @media (max-width: 1210px) {
+    .container {
+      .text-about-exp-list {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0rem;
+      }
+      .text-about {
+        .text-about-desc {
+          padding-top: 0rem;
         }
       }
     }

@@ -11,9 +11,11 @@ header {
   z-index: 2077;
   .container {
     .logo {
-      img {
-        width: 100%;
-        max-width: 200px;
+      h3 {
+        font-family: "Inter", sans-serif;
+        font-weight: 600;
+        font-size: 1.8rem;
+        color: #040506;
       }
     }
     display: flex;
@@ -135,7 +137,7 @@ header {
     .menu-mobile {
       display: block;
       position: fixed;
-      background-color: #040506;
+      background-color: rgb(4, 5, 6);
       width: 100%;
       height: calc(100% - 88px);
       left: 0;
