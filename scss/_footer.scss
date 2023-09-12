@@ -68,6 +68,14 @@ footer {
       display: flex;
       align-items: center;
       justify-content: space-between;
+      a {
+        h3 {
+          font-family: "Inter", sans-serif;
+          font-weight: 600;
+          font-size: 1.8rem;
+          color: #040506;
+        }
+      }
       .logo-footer {
         width: 100%;
         max-width: 200px;

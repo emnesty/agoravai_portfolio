@@ -371,8 +371,8 @@
     }
   }
   @media (max-width: 600px) {
-    padding-top: 3.2rem;
-    padding-bottom: 6.2rem;
+    padding-top: 5.2rem;
+    padding-bottom: 5.2rem;
     .container {
       padding-bottom: 5.2rem;
       .skill-titles {
@@ -513,9 +513,13 @@
       justify-content: center;
       align-items: center;
       .text-about {
+        gap: 2.4rem;
         padding-top: 3.2rem;
         align-items: center;
         text-align: center;
+        p {
+          font-size: 14px;
+        }
         .text-about-desc {
           padding-top: 1.5rem;
         }
@@ -1027,6 +1031,8 @@
     }
   }
   @media (max-width: 600px) {
+    padding-top: 5.2rem;
+    padding-bottom: 5.2rem;
     height: 480px;
     .container {
       .slide-cases-mobile {
