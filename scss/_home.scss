@@ -213,9 +213,13 @@
     }
   }
   @media (max-width: 800px) {
+    height: 58rem;
     .container {
       .right-content {
         display: none;
+      }
+      .left-content {
+        padding-top: 6.9rem;
       }
     }
   }
