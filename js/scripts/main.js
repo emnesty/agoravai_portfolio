@@ -132,7 +132,7 @@ const slide_about_case = new Swiper(".slide-about-case", {
 const menuButton = document.getElementById("js-menu-button")
 if (menuButton) {
   menuButton.addEventListener("click", () => {
-    document.documentElement.classList.toggle("menu-opened")
     menuButton.classList.toggle("is-active") // add the CSS configuration on this button
+    document.documentElement.classList.toggle("menu-opened")
   })
 }
