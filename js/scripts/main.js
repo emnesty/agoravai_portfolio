@@ -136,3 +136,11 @@ if (menuButton) {
     document.documentElement.classList.toggle("menu-opened")
   })
 }
+const menuSections = document.querySelectorAll(".menu-mobile-items")
+
+menuSections.forEach((menuItem) => {
+  menuItem.addEventListener("click", () => {
+    menuButton.classList.remove("is-active")
+    document.documentElement.classList.remove("menu-opened")
+  })
+})
