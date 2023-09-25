@@ -1,7 +1,8 @@
 .s-hero {
   width: 100%;
   background: var(--white);
-  background: url(/assets/bg/background-pattern.png) no-repeat center;
+  // background: url(/assets/bg/background-pattern.png) no-repeat center;
+  background: linear-gradient(118.36deg, rgba(0, 1, 12, 1) 0%, rgba(0, 1, 7, 1) 100%);
   position: relative;
   height: 75rem;
   .container {
@@ -19,13 +20,17 @@
           gap: 3.2rem;
           li {
             a {
+              img {
+                width: 100%;
+                max-width: 24px;
+              }
               display: flex;
               align-items: center;
               gap: 10px;
               transition: all 0.3s;
               position: relative;
               padding-bottom: 5px;
-              color: var(--gray-900);
+              color: #f3f3f3;
               &::after {
                 content: "";
                 position: absolute;
@@ -40,7 +45,7 @@
                 border-radius: 8px;
               }
               &:hover {
-                color: var(--gray-900);
+                color: #f3f3f3;
                 &::after {
                   opacity: 0.8;
                   bottom: -48%;
@@ -55,7 +60,7 @@
           font-size: 1.6rem;
           line-height: 120%;
           letter-spacing: 0.2rem;
-          color: var(--gray-700);
+          color: #f3f3f3;
           strong {
             color: var(--primary);
           }
@@ -69,7 +74,7 @@
           margin-top: 1.6rem;
           margin-bottom: 2.4rem;
           font-size: 5.8rem;
-          color: var(--gray-900);
+          color: #f3f3f3;
         }
         p {
           width: 100%;
@@ -78,7 +83,7 @@
           font-weight: 400;
           font-size: 1.8rem;
           line-height: 150%;
-          color: var(--gray-700);
+          color: #fffffc;
           margin-bottom: 7.2rem;
         }
       }
