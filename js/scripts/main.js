@@ -144,3 +144,85 @@ menuSections.forEach((menuItem) => {
     document.documentElement.classList.remove("menu-opened")
   })
 })
+
+//Abrir Modal
+const buttonModal = document.querySelectorAll(".js-open-modal")
+const buttonsModal = document.querySelectorAll(".js-open-modal")
+const btnCloseModal = document.querySelector(".js-close-modal")
+const modal = document.querySelector(".modal")
+const modalTitle = modal.querySelector(".modal-title")
+const modalContent = modal.querySelector(".modal-content p")
+const modalImage = modal.querySelector(".image-case img")
+const tagHtml = document.documentElement
+
+// Apertar ESC e fechar o modal
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") {
+    tagHtml.classList.remove("open-modal")
+  }
+})
+
+// Clicar fora do Modal e Fechar
+document.addEventListener("click", (event) => {
+  if (event.target.closest(".js-open-modal")) return
+  if (!event.target.closest(".modal .box")) {
+    tagHtml.classList.remove("open-modal")
+  }
+})
+
+// Função para abrir o modal com conteúdo personalizado
+function openModalWithDynamicContent(targetModal, title, content, image) {
+  const modal = document.querySelector(`#${targetModal}`)
+  if (!modal) return
+
+  // Defina o conteúdo personalizado
+  modalTitle.textContent = title
+  modalContent.textContent = content
+  modalImage.src = image
+
+  // Adicione a classe para abrir o modal
+  document.documentElement.classList.add("open-modal")
+  toggleOverflowHidden(modal)
+}
+
+// Adicione ouvintes de eventos para cada botão de abertura de modal
+buttonsModal.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const targetModal = event.target.getAttribute("data-target")
+    const title = event.target.getAttribute("data-title")
+    const content = event.target.getAttribute("data-content")
+    const image = event.target.getAttribute("data-image")
+    openModal(targetModal, title, content, image)
+  })
+})
+
+//Abrir Modal ao clicar no botão
+function openModal() {
+  document.documentElement.classList.add("open-modal")
+  // Add the overflow: hidden property to the body element
+  toggleOverflowHidden(modal)
+}
+
+function closeModal() {
+  document.documentElement.classList.remove("open-modal")
+  // Remove the overflow: hidden property from the body element
+  toggleOverflowHidden(modal)
+}
+
+buttonModal.forEach((card) => {
+  card.addEventListener("click", openModal)
+})
+
+btnCloseModal.addEventListener("click", closeModal)
+
+// Function to add and remove overflow hidden from the body element
+function toggleOverflowHidden(modal) {
+  // Check if the modal is open
+  if (modal.classList.contains("open-modal")) {
+    // Add the overflow: hidden property to the body element
+    document.body.style.overflow = "hidden"
+  } else {
+    // Remove the overflow: hidden property from the body element
+    document.body.style.overflow = "auto"
+  }
+}
