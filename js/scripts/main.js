@@ -151,7 +151,7 @@ const buttonsModal = document.querySelectorAll(".js-open-modal")
 const btnCloseModal = document.querySelector(".js-close-modal")
 const modal = document.querySelector(".modal")
 const modalTitle = modal.querySelector(".modal-title")
-const modalContent = modal.querySelector(".modal-content p")
+const modalContent = modal.querySelector(".modal-content")
 const modalImage = modal.querySelector(".image-case img")
 const tagHtml = document.documentElement
 
@@ -174,7 +174,6 @@ document.addEventListener("click", (event) => {
 function openModalWithDynamicContent(targetModal, title, content, image) {
   const modal = document.querySelector(`#${targetModal}`)
   if (!modal) return
-
   // Defina o conteúdo personalizado
   modalTitle.textContent = title
   modalContent.textContent = content
@@ -188,14 +187,13 @@ function openModalWithDynamicContent(targetModal, title, content, image) {
 // Adicione ouvintes de eventos para cada botão de abertura de modal
 buttonsModal.forEach((button) => {
   button.addEventListener("click", (event) => {
-    const targetModal = event.target.getAttribute("data-target")
-    const title = event.target.getAttribute("data-title")
-    const content = event.target.getAttribute("data-content")
-    const image = event.target.getAttribute("data-image")
-    openModal(targetModal, title, content, image)
+    const targetModal = button.getAttribute("data-target")
+    const title = button.getAttribute("data-title")
+    const content = button.getAttribute("data-content")
+    const image = button.getAttribute("data-image")
+    openModalWithDynamicContent(targetModal, title, content, image)
   })
 })
-
 //Abrir Modal ao clicar no botão
 function openModal() {
   document.documentElement.classList.add("open-modal")
@@ -209,9 +207,9 @@ function closeModal() {
   toggleOverflowHidden(modal)
 }
 
-buttonModal.forEach((card) => {
-  card.addEventListener("click", openModal)
-})
+// buttonModal.forEach((card) => {
+//   card.addEventListener("click", openModal)
+// })
 
 btnCloseModal.addEventListener("click", closeModal)
 
