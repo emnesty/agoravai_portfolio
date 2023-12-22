@@ -1,4 +1,4 @@
-![Cover](https://user-images.githubusercontent.com/7916851/213884949-e3ac6d7f-6b62-4690-b28b-9bdae835a91a.png)
+![Cover](https://github.com/emnesty/agoravai_portfolio/blob/main/pessoal.png)
 
 ## Sobre o projeto
 Projeto desenvolvido durante o curso CodeBoost, e teve como objetivo criar uma landing page responsiva utilizando as stacks HMTL, CSS/SASS e JavaScript.
@@ -11,7 +11,7 @@ Projeto desenvolvido durante o curso CodeBoost, e teve como objetivo criar uma l
 
 
 ## Resultado
-Resultado final: https://lp-neon-code.netlify.app/
+Resultado final: https://portfolio-lucianosilva.vercel.app/
 
 ![screencapture-127-0-0-1-5500-index-html-2023-01-21-16_56_55 1](https://github.com/emnesty/agoravai_portfolio/blob/main/screencapture-portfolio-lucianosilva-vercel-app-2023-12-22-09_18_16.png)
 
